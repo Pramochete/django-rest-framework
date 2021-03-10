@@ -275,7 +275,7 @@ We'll also need a view which corresponds to an individual snippet, and can be us
 Finally we need to wire these views up.  Create the `snippets/urls.py` file:
 
     from django.urls import path
-    from snippets import views
+    from .snippets import views
 
     urlpatterns = [
         path('snippets/', views.snippet_list),
